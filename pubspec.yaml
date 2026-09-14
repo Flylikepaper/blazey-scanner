@@ -1,0 +1,23 @@
+name: paperplanes_package_scanner
+description: Multi-code cannabis product scanner (UPC + QR) for NY-market packaging.
+publish_to: "none"
+version: 2.0.0+2
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Camera preview + multi-symbology decoding (ML Kit / AVFoundation)
+  mobile_scanner: ^5.2.3
+  # Open COA / Retail ID links in the browser
+  url_launcher: ^6.3.0
+  # Optional online SKU fallback in product_repository.dart
+  http: ^1.2.0
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
